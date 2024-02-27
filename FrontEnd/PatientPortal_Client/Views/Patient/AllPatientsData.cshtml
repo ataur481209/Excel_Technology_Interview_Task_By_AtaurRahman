@@ -1,0 +1,86 @@
+﻿@model IEnumerable<PatientPortal_Client.ViewModels.PatientDetailsViewModel>
+
+@{
+    ViewData["Title"] = "AllPatientsData";
+}
+
+<style>
+    
+
+    table thead tr th,
+    table tbody tr td{
+        text-align:center;
+    }
+</style>
+
+<div >
+    <h1 class="col-2 m-auto shadow p-2 text-center" style="font-family:'Times New Roman', Times, serif; font-weight:600; font-size: 1.5em; color: gray">Patient List</h1>
+</div>
+
+<div class="d-flex justify-content-end">
+    <a asp-controller="Patient" asp-action="InsertPatientData" class="btn btn-outline-primary">Create New</a>
+</div>
+<p>
+    
+</p>
+<table class="table table-bordered table-light">
+    <thead class="table-success">
+        <tr>
+            <th>
+                Patient ID
+            </th>
+            <th>
+                Patient Name
+            </th>
+            <th>
+                Epilepsy Status
+            </th>
+            <th>
+                Main Disease
+            </th>
+            <th>
+                NCDs
+            </th>
+            <th>
+                Allergies
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.PatientId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PatientName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Epilepsy)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DiseaseId)
+            </td>
+                <td>
+                    @foreach (var ncdName in item.NCD_Names)
+                    {
+                        <p>@ncdName</p>
+                    }
+                </td>
+                <td>
+                    @foreach (var allergyName in item.Allergy_Names)
+                    {
+                        <p>@allergyName</p>
+                    }
+                </td>
+
+            <td>
+                    @Html.ActionLink("Edit", "EditPatientData", new { id = item.PatientId }, new { @class = "btn btn-sm btn-outline-warning" })
+                    @Html.ActionLink("Delete", "DeletePatientData", new {  id = item.PatientId  }, new {@class="btn btn-sm btn-outline-danger"})
+                    
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

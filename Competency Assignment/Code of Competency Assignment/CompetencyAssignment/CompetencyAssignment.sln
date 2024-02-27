@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34202.233
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Answer_4", "Answer_4\Answer_4.csproj", "{5F9C832A-7727-437E-9938-00BAC990F612}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Answer_5", "Answer_5\Answer_5.csproj", "{DC57C09A-693E-4835-AD6E-5A06103A2F7E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Answer_6", "Answer_6\Answer_6.csproj", "{CFCB2922-A33D-4B87-B0DB-F73AE0F4614E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5F9C832A-7727-437E-9938-00BAC990F612}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F9C832A-7727-437E-9938-00BAC990F612}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F9C832A-7727-437E-9938-00BAC990F612}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F9C832A-7727-437E-9938-00BAC990F612}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC57C09A-693E-4835-AD6E-5A06103A2F7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC57C09A-693E-4835-AD6E-5A06103A2F7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC57C09A-693E-4835-AD6E-5A06103A2F7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC57C09A-693E-4835-AD6E-5A06103A2F7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFCB2922-A33D-4B87-B0DB-F73AE0F4614E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFCB2922-A33D-4B87-B0DB-F73AE0F4614E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFCB2922-A33D-4B87-B0DB-F73AE0F4614E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFCB2922-A33D-4B87-B0DB-F73AE0F4614E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {54B393EE-E791-480E-A201-F47DC89D9D7E}
+	EndGlobalSection
+EndGlobal
